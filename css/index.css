@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Cuprum');
+
+header h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 3rem;
+    margin: 20 auto;
+    text-align: center;
+}
+
+header .menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: blue;
+}
+
+header .menu li a:hover {
+    text-decoration: underline;
+}
