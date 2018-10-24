@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Cuprum');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+body p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.top img {
+    display: block;
+    width: 100%;;
+}
 
 header h1 {
     font-family: 'Cuprum', sans-serif;
     font-size: 3rem;
-    margin: 20 auto;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -17,11 +33,69 @@ header .menu li {
     display: inline;
 }
 
+header .menu li {
+    margin: 0 2%;
+}
+
 header .menu li a {
     text-decoration: none;
     color: blue;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
 }
 
 header .menu li a:hover {
     text-decoration: underline;
+}
+
+header img {
+    display: block;
+    width: 100%;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+}
+
+main h2 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    #events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.news img {
+    display: block;
+    width: 100%;
+}
+
+.news article {
+    margin: 10px;
+} 
+
+@media (min-width: 400px) {
+    .news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    #staff {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#staff img {
+    display: block;
+    width: 100%;
 }
