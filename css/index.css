@@ -23,13 +23,7 @@ header .menu {
 
 header .menu li {
     display: inline;
-}
-
-header .menu li {
     margin: 0 2%;
-}
-
-header .menu li {
     display: block;
     width: 100%;
 }
@@ -91,7 +85,7 @@ main h2 {
 } 
 
 .news article p {
-    margin: 10 0 0 0;
+    margin: 10px 0 0 0;
 } 
 
 .friends p {
