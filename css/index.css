@@ -6,11 +6,6 @@ body {
     margin: auto;
 }
 
-body p {
-    text-align: justify;
-    margin: 10px;
-}
-
 .top img {
     display: block;
     width: 100%;
@@ -62,6 +57,11 @@ main h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+main p {
+    text-align: justify;
+    margin: 10px;
 }
 
 @media (min-width: 500px) {
@@ -177,7 +177,7 @@ main h2 {
 @media (min-width: 600px) {
     .button-container {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
     }
     
 }
@@ -204,3 +204,14 @@ main h2 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.end {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    background-color: grey;
+}
+
+.end img {
+    display: block;
+    width: 100%;
