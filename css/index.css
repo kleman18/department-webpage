@@ -115,6 +115,12 @@ main p {
     justify-content: center;
 }
 
+.head img {
+    display: flex;
+    align-items: center;
+    
+}
+
 @media (min-width: 400px) {
     .teachers {
         display: grid;
@@ -134,7 +140,7 @@ main p {
 }
 
 .teachers article {
-    margin: 20px;
+    margin: 30px;
 }
 
 #contacts h3 {
@@ -145,8 +151,6 @@ main p {
     margin-right: 10px;
     margin-left: 10px;
 }
-
-
 
 @media (max-width: 500px) {
     .form p {
@@ -159,12 +163,6 @@ main p {
     display: flex;
     margin-top: 15px;
 }
-
-
-
-
-
-
 
 @media (min-width: 500px) {
     .name {
@@ -233,7 +231,7 @@ main p {
     text-align: center;
 }
 
-.contact h4 p {
+.contact p {
     text-align: center;
 }
 
