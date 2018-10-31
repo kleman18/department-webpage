@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>department-HETAPP</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/atom.jpg">
 </head>
 
 <body>
@@ -196,27 +197,39 @@
             <h3>Контакти</h3>
             <form class="form">
                 <div class="name">
-                    <label>Прізвище та ім'я:
-                    <input type="text" name="name"
-                     placeholder="name" required>
-                    </label>
+                    <div>
+                        <p>
+                            Прізвище та ім'я:
+                        </p>
+                    </div>
+                    <div>
+                        <input class="textArea" type="text" name="name" placeholder="name" required>
+                    </div>
                 </div>
-                <br>
                 <div class="email">
-                    <label>E-MAIL:
-                    <input type="email" name="email"
-                     placeholder="email" required>
-                    </label>
+                    <div>
+                        <p>
+                            E-MAIL:
+                        </p>
+                    </div>
+                    <div>
+                        <input class="textArea" type="email" name="email" placeholder="email" required>
+                    </div>
                 </div>
                 <br>
                 <div class="message">
-                    <label>Повідомлення:
-                    <textarea placeholder="message"></textarea>
-                    </label>
+                    <div>
+                        <p>
+                            Повідомлення:
+                        </p>
+                    </div>
+                    <div>
+                        <textarea class="textArea" class="textArea" placeholder="message"></textarea>
+                    </div>
                 </div>
                 <br>
-                <div class="button-container">
-                    <button class="button">Відправити</button>
+                <div id="button-container">
+                    <button id="button">Відправити</button>
                 </div>
             </form>
             <div class="contact">
@@ -247,10 +260,10 @@
             </div>
             <div class="end">
                 <img src="img/map.JPG" alt="Карта">
-           <p>
-            © Володимир Клемань
-            </p>
-        </div>
+                <p>
+                    © Володимир Клемань
+                </p>
+            </div>
     </footer>
 
 </body>
