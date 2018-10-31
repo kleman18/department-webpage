@@ -51,7 +51,7 @@ header .baner {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/station.jpg);
+    background-image: url(../img/station.png);
     background-size: cover;
     background-position:center;
 }
