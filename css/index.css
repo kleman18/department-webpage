@@ -48,7 +48,7 @@ header .baner {
     justify-content: center;
     background-image: url(../img/station.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
 }
 
 main h2 {
@@ -78,15 +78,15 @@ main p {
 
 .news article {
     margin: 20px;
-} 
+}
 
 .news article h3 {
     text-align: center;
-} 
+}
 
 .news article p {
     margin: 10px 0 0 0;
-} 
+}
 
 .friends p {
     font-family: 'Cuprum', sans-serif;
@@ -110,7 +110,7 @@ main p {
     text-align: center;
 }
 
-#staff > article {
+#staff>article {
     display: flex;
     justify-content: center;
 }
@@ -141,37 +141,61 @@ main p {
     text-align: center;
 }
 
-.name {
-    display:grid;
-    grid-template-columns: 3fr 7fr;
-}
-
 .form {
     margin-right: 10px;
+    margin-left: 10px;
 }
 
-.form p {
-    text-align: center;
+
+
+@media (max-width: 500px) {
+    .form p {
+        display: none;
+    }
 }
 
 .textArea {
-        width: 100%;
+    width: 100%;
     display: flex;
     margin-top: 15px;
 }
 
-.email {
-    display:grid;
-    grid-template-columns: 3fr 7fr;
-}
 
-.message {
-    display:grid;
-    grid-template-columns: 3fr 7fr;
+
+
+
+
+
+@media (min-width: 500px) {
+    .name {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
+
+    .form p {
+        text-align: center;
+    }
+
+    .textArea {
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .email {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
+
+    .message {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+    }
 }
 
 #button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: none;
     color: white;
     padding: 5px 10px;
@@ -179,10 +203,11 @@ main p {
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     cursor: pointer;
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     border: 2px solid #4CAF50;
 }
 
@@ -196,12 +221,12 @@ main p {
     justify-content: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     #button-container {
         display: flex;
         justify-content: flex-end;
     }
-    
+
 }
 
 .contact h4 {
@@ -217,7 +242,7 @@ main p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
 }
 
 @media (min-width: 600px) {
@@ -240,6 +265,6 @@ main p {
 }
 
 .end p {
-margin-bottom: 0px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
