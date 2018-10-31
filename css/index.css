@@ -19,13 +19,13 @@ body p {
 header .menu {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header .menu li {
     display: inline;
     margin: 0 2%;
     display: block;
-    width: 100%;
 }
 
 header .menu li a {
@@ -33,6 +33,7 @@ header .menu li a {
     color: blue;
     font-size: 2rem;
     font-family: 'Lobster', cursive;
+    text-align: center;
 }
 
 header .menu li a:hover {
@@ -46,14 +47,13 @@ header h1 {
     text-align: center;
 }
 
-header img {
-    display: block;
-    width: 100%;
-}
-
-header img {
+header .baner {
     display: flex;
+    align-items: center;
     justify-content: center;
+    background-image: url(../img/station.jpg);
+    background-size: cover;
+    background-position:center;
 }
 
 main h2 {
@@ -143,9 +143,10 @@ main h2 {
 
 
 
-
-
-
+.message {
+    display: flex;
+    justify-content: space-around;
+}
 
 .button {
     background-color: #4CAF50; /* Green */
@@ -166,6 +167,19 @@ main h2 {
 .button:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .button-container {
+        display: flex;
+        justify-content: right;
+    }
+    
 }
 
 .contact h4 {
