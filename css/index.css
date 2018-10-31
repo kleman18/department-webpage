@@ -115,12 +115,6 @@ main p {
     justify-content: center;
 }
 
-.head img {
-    display: flex;
-    align-items: center;
-    
-}
-
 @media (min-width: 400px) {
     .teachers {
         display: grid;
