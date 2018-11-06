@@ -4,6 +4,7 @@
 body {
     max-width: 980px;
     margin: auto;
+    background-color: aliceblue;
 }
 
 .top img {
@@ -116,6 +117,29 @@ main p {
 }
 
 @media (min-width: 400px) {
+    .head {
+        display: grid;
+        grid-template-columns: 2.5fr 5fr 2.5fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .head {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.head img {
+    display: block;
+    width: 100%;
+}
+
+.head article {
+    margin: 30px;
+}
+
+@media (min-width: 400px) {
     .teachers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -152,26 +176,30 @@ main p {
     }
 }
 
-.textArea {
-    width: 100%;
-    display: flex;
-    margin-top: 15px;
-}
-
+.nameArea {
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 10px 0px;
+    }
+    
+    .emailArea {
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        padding: 10px 0px;
+    }
+    
+    .textArea {
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 15px 0px;
+    }
 @media (min-width: 500px) {
     .name {
         display: grid;
         grid-template-columns: 3fr 7fr;
-    }
-
-    .form p {
-        text-align: center;
-    }
-
-    .textArea {
-        width: 100%;
-        display: flex;
-        margin-top: 15px;
     }
 
     .email {
@@ -182,6 +210,31 @@ main p {
     .message {
         display: grid;
         grid-template-columns: 3fr 7fr;
+    }
+
+    .form p {
+        text-align: center;
+    }
+
+    .nameArea {
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 10px 0px;
+    }
+    
+    .emailArea {
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 10px 0px;
+    }
+    
+    .textArea {
+        width: 100%;
+        display: flex;
+        margin-top: 0px;
+        padding: 15px 0px;
     }
 }
 
@@ -257,6 +310,7 @@ main p {
 }
 
 .end p {
+    padding: 10px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
